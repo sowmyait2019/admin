@@ -1,0 +1,56 @@
+
+<app-dashboard></app-dashboard>
+
+
+
+<!--<div>-->
+<!--  <input type="text" placeholder="Search">-->
+
+<!--  <table>-->
+<!--    <thead>-->
+<!--      <tr>-->
+<!--        <th>Name</th>-->
+<!--        <th>Mobile Number</th>-->
+<!--        <th>Email Address</th>-->
+<!--        <th>Action</th>-->
+<!--      </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--      <tr *ngFor="let user of user">-->
+<!--        <td>{{ user.Name}}</td>-->
+<!--        <td> {{ user.MobileNumber }}</td>-->
+<!--        <td> {{ user.EmailAddress }}</td>-->
+<!--      </tr>-->
+<!--    </tbody>-->
+<!--    <br>-->
+<!--    <br>-->
+
+<!--  </table>-->
+<!--</div>-->
+<table class="user-list">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Mobile No.</th>
+    <th>Email ID</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{ user.name }}</td>
+    <td>{{ user.mobile }}</td>
+    <td>{{ user.email }}</td>
+    <td>
+
+      <button (click)="editUser(user)">
+        <i class="fas fa-edit"></i> <!-- Font Awesome edit icon -->
+      </button>
+      <button (click)="deleteUser(user)">
+        <i class="fas fa-trash-alt"></i> <!-- Font Awesome delete icon -->
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+

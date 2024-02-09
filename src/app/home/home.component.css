@@ -1,0 +1,27 @@
+img {
+  position: absolute;
+  top: 35px; /* Adjust the value based on how much you want to move the image down */
+}
+.homecontent
+{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 40%;
+  transform: translate(-50%,-50%);
+}
+.homecontent h1
+{
+  color: #ffffff;
+  font-size: 40px;
+
+}
+@media screen and (max-width:600px)
+{
+  .homecontent h1
+  {
+    font-size: 30px;
+
+  }
+
+}
