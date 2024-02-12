@@ -37,10 +37,10 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let user of users">
-    <td>{{ user.name }}</td>
-    <td>{{ user.mobile }}</td>
-    <td>{{ user.email }}</td>
+  <tr *ngFor="let user of user">
+    <td>{{ user.Name }}</td>
+    <td>{{ user.MobileNumber }}</td>
+    <td>{{ user.EmailAddress }}</td>
     <td>
 
       <button (click)="editUser(user)">

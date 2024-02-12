@@ -1,5 +1,5 @@
 body {
-  background-color: #111;
+  background-color: #8f1515;
   margin: 0;
   font-family: 'Arial', sans-serif;
 
@@ -55,8 +55,9 @@ body {
   padding: 16px;
 }
 #sidebarMenu {
-  background-color: rgb(76, 15, 15) !important;
+  background-color: rgb(20, 11, 35) !important;
   color: white; /* You may want to set the text color to white or another readable color on a dark background */
+
 }
 .nav-item {
   position: relative;
@@ -64,9 +65,10 @@ body {
 .menu {
   position: absolute;
   z-index: 2;
-  background:#4c0f0f;
+  background: #150c25;
   display: none;
   padding: 15px 15px;
+
 
 }
 .nav-item:hover .menu{
@@ -75,4 +77,8 @@ body {
 .menu a{
   width: 100%;
   min-width: 8rem;
+}
+.img-img {
+  margin-bottom: 20px;
+  margin-left: 25px;
 }

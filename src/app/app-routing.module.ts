@@ -12,19 +12,23 @@ import { LoginComponent} from "./login/login.component";
 import { SignupComponent} from "./signup/signup.component";
 
 
+
 const routes: Routes = [
   {path: '',redirectTo: '/login', pathMatch: 'full'},
   {path:'login', component:LoginComponent},
   {path:'signup', component:SignupComponent},
-  {path: 'home', component: HomeComponent},
+  {path: 'Dashboard/Home', component: HomeComponent},
   {path: 'nav', component: NavComponent},
-  {path: 'Dashboard', component: DashboardComponent},
+  // {path: 'Dashboard/Dashboard', component: DashboardComponent},
   {path: 'Dashboard/Orders', component: OrderComponent},
   {path: 'Dashboard/Users', component: UserComponent},
   {path: 'Dashboard/Books', component: BookComponent},
   {path: 'Dashboard/Add New', component: AdduserComponent},
   {path: 'Dashboard/Add Bulk', component: AddbulkComponent},
-  {path: 'Logout',component:LoginComponent},
+  {path: 'Dashboard/Login',component:LoginComponent},
+
+
+
 
 
 ];

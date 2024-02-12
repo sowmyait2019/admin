@@ -7,13 +7,23 @@ import { UsersService } from '../service/service/users.service';
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
-export class UserComponent  {
-  users: { name: string, mobile: string, email: string }[] = [
-    { name: 'Sow', mobile: '97865534567', email: 'sow@gmail.com' },
-    { name: 'Gaj', mobile: '97865534567', email: 'sow@gmail.com' },
-    { name: 'Haa', mobile: '97865534567', email: 'sow@gmail.com' },
-    { name: 'Bha', mobile: '97865534567', email: 'sow@gmail.com' }
-  ];
+export class UserComponent  implements OnInit{
+  // users: { name: string, mobile: string, email: string }[] = [
+  //   { name: 'Sow', mobile: '97865534567', email: 'sow@gmail.com' },
+  //   { name: 'Gaj', mobile: '97865534567', email: 'sow@gmail.com' },
+  //   { name: 'Haa', mobile: '97865534567', email: 'sow@gmail.com' },
+  //   { name: 'Bha', mobile: '97865534567', email: 'sow@gmail.com' }
+  // ];
+  searchTerm: string = '';
+  user:any;
+  users: any;
+  constructor(private userservice: UsersService) { }
+
+  ngOnInit(): void {
+    this.userservice.getusers().subscribe(contacts => {
+      this.user = contacts;
+    })
+  }
 
   addUser() {
     // Functionality to add a new user
